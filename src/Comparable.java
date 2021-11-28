@@ -16,7 +16,7 @@ public class Comparable {
 
         System.out.println("Before sorting \n" + employeeList);
 
-        Collections.sort(employeeList);
+        Collections.sort(employeeList, new NameComparator());
 
         System.out.println("After sorting \n" + employeeList);
 

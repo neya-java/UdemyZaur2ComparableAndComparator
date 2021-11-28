@@ -22,16 +22,16 @@ public class Employee implements java.lang.Comparable<Employee> {
     }
 
 // Variant spelling 1
-//    @Override
-//    public int compareTo(Employee anotherEmployee) {
-//        if(this.id == anotherEmployee.id) {
-//            return 0;
-//        }else if(this.id < anotherEmployee.id) {
-//            return -1;
-//        }else {
-//            return 1;
-//        }
-//    }
+    @Override
+    public int compareTo(Employee anotherEmployee) {
+        if(this.id == anotherEmployee.id) {
+            return 0;
+        }else if(this.id < anotherEmployee.id) {
+            return -1;
+        }else {
+            return 1;
+        }
+    }
 
 // Variant spelling 2
 //    @Override
@@ -46,13 +46,13 @@ public class Employee implements java.lang.Comparable<Employee> {
 //    }
 
 // Variant spelling 4.
-         @Override
-         public int compareTo(Employee anotherEmployee) {
-             int result = this.name.compareTo(anotherEmployee.name);
-             if (result == 0) {
-                 result = this.surname.compareTo(anotherEmployee.surname);
-             }
-             return result;
-         }
+//         @Override
+//         public int compareTo(Employee anotherEmployee) {
+//             int result = this.name.compareTo(anotherEmployee.name);
+//             if (result == 0) {
+//                 result = this.surname.compareTo(anotherEmployee.surname);
+//             }
+//             return result;
+//         }
 
 }
